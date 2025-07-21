@@ -1,0 +1,384 @@
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f4f5;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Paleta de colores */
+:root {
+  --primary-pink: #f5e1e6;
+  --accent-gold: #d4af37;
+  --lavender: #e6e6fa;
+  --white: #ffffff;
+  --text-dark: #4a3c3c;
+}
+
+/* Encabezado y sección principal */
+header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lirp.cdn-website.com/07aaf2d8/dms3rep/multi/opt/un%CC%83as-acrilicas3-1920w.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--accent-gold);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b89b2e;
+}
+
+/* Navegación */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-gold);
+}
+
+/* Estilos de secciones */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Servicios */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.service-item {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Precios */
+.prices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.price-item {
+  background-color: var(--lavender);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Formulario de contacto */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input[type="date"] {
+  padding: 10px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: var(--accent-gold);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background-color: #b89b2e;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  background-color: var(--accent-gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: var(--white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.whatsapp-btn i {
+  font-size: 1.5rem;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20b858;
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--primary-pink);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.social-links {
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: var(--text-dark);
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a i {
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: var(--accent-gold);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem; /* Reducido para mejor legibilidad en móviles */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem; /* Ajuste para texto más compacto */
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+  }
+
+  .services-grid,
+  .prices-grid {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+  }
+
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-btn i {
+    font-size: 1.2rem;
+  }
+
+  .social-links a i {
+    font-size: 1.2rem;
+  }
+
+  /* Ajuste del formulario para móviles */
+  .contact-form {
+    padding: 20px; /* Menos padding en móviles */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem; /* Texto más pequeño para pantallas pequeñas */
+  }
+}
+
+/* Estilos para el ícono de hamburguesa */
+.menu-toggle i {
+  font-size: 1.8rem; /* Tamaño del ícono */
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+}

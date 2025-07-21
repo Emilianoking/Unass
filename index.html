@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estudio de estética especializado en uñas y pedicure. Servicios de manicure, uñas acrílicas, pedicure spa y diseños personalizados.">
+  <title>Estudio de Uñas - Belleza en tus Manos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navegación -->
+  <nav>
+    <button class="menu-toggle"><i class="bi bi-list"></i></button>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#gallery">Galería</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#prices">Precios</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección principal -->
+  <header id="home">
+    <div class="hero-content">
+      <h1>Belleza en tus Manos</h1>
+      <p>Tus uñas hablan por ti… déjalas decir lo mejor.</p>
+      <a href="#contact" class="btn">Agenda tu cita</a>
+    </div>
+  </header>
+
+  <!-- Galería -->
+  <section id="gallery">
+    <h2>Nuestros Trabajos</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1610992028489-1a38e3c80bb6?w=500" alt="Manicure elegante">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500" alt="Uñas acrílicas">
+      <img src="https://images.unsplash.com/photo-1598961396629-11ddd8a10899?w=500" alt="Pedicure spa">
+      <img src="https://images.unsplash.com/photo-1610992028489-1a38e3c80bb6?w=500" alt="Diseño personalizado">
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Pedicure Spa</h3>
+        <p>Relajación y cuidado para tus pies con un tratamiento completo.</p>
+      </div>
+      <div class="service-item">
+        <h3>Uñas Acrílicas</h3>
+        <p>Uñas duraderas y elegantes con acabados personalizados.</p>
+      </div>
+      <div class="service-item">
+        <h3>Manicure Semipermanente</h3>
+        <p>Color vibrante y duradero para tus uñas.</p>
+      </div>
+      <div class="service-item">
+        <h3>Diseño Personalizado</h3>
+        <p>Arte único para tus uñas con detalles exclusivos.</p>
+      </div>
+      <div class="service-item">
+        <h3>Decoración con Piedras</h3>
+        <p>Detalles brillantes para un look sofisticado.</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="prices">
+    <h2>Precios</h2>
+    <div class="prices-grid">
+      <div class="price-item">
+        <h3>Pedicure Spa</h3>
+        <p>Desde $35.000</p>
+      </div>
+      <div class="price-item">
+        <h3>Manicure con Diseño</h3>
+        <p>Desde $25.000</p>
+      </div>
+      <div class="price-item">
+        <h3>Uñas Acrílicas</h3>
+        <p>Desde $50.000</p>
+      </div>
+      <div class="price-item">
+        <h3>Decoración con Piedras</h3>
+        <p>Desde $10.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Nombre" required>
+      <input type="date" id="appointmentDate" placeholder="Fecha de la cita" required>
+      <textarea id="message" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>¡Mensaje enviado!</h3>
+      <p>Nos pondremos en contacto contigo pronto.</p>
+      <button onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/+573503592833?text=¡Hola! Quiero agendar una cita." class="whatsapp-btn" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Síguenos en nuestras redes sociales</p>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    <p>© 2025 Estudio de Uñas. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
