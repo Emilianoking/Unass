@@ -11,7 +11,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   const whatsappMessage = `Hola, soy ${encodeURIComponent(name)} y quiero agendar una cita para el ${encodeURIComponent(appointmentDate)}. ${encodeURIComponent(message)}.`;
   
   // Redirigir a WhatsApp con el mensaje
-  window.location.href = `https://wa.me/+573503592833?text=${whatsappMessage}`;
+  window.location.href = `https://wa.me/+573124388253?text=${whatsappMessage}`;
   
   // Mostrar el modal de confirmación
   document.getElementById('modal').style.display = 'flex';
